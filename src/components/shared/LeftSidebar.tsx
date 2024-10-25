@@ -36,7 +36,7 @@ const LeftSidebar = () => {
           />
         </Link>
 
-        {isLoading || !user.email ? (
+        {isLoading  ? (
           <div className="h-14">
             <Loader />
           </div>
@@ -48,7 +48,7 @@ const LeftSidebar = () => {
               className="h-14 w-14 rounded-full"
             />
             <div className="flex flex-col">
-              <p className="body-bold">{user.name}</p>
+              <p className="body-bold">{user.name }</p>
               <p className="small-regular text-light-3">@{user.username}</p>
             </div>
           </Link>
